@@ -1,0 +1,9 @@
+.myInp {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 15px;
+    margin: 5px 0;
+    border:1px solid #d5ecff;
+    border-radius: 5px;
+    box-shadow: 8px 12px 15px #727d80;
+}
