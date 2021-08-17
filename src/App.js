@@ -13,12 +13,31 @@ function App() {
       {id: 3, title: 'Java', body: 'Java is a famous language in nowadays'},
       {id: 4, title: '.Net', body: 'Some description of post .Net is a famous language in nowadays'},
   ]);
+  const [post, setPost] = useState({title:'', body:''});
+
+
+  const addNewPost =(e) =>{
+      e.preventDefault();
+      const newPost = {
+          id: Date.now(),
+          ...post
+      };
+      setPosts([...posts, newPost]);
+      setPost({title:'', body:''})
+  };
+
   return (
-      <div className="App">
+      <div className="App">git
         <form className="form">
-            <MyInput type="text" placeholder="post title"/>
-            <MyInput type="text" placeholder="post description"/>
-            <MyButton >Create post</MyButton>
+            <MyInput value = {post.title}
+                     onChange = {e => setPost({...post, title:e.target.value})}
+                     type="text"
+                     placeholder="post title"/>
+            <MyInput value = {post.body}
+                     onChange = {e => setPost({...post, body:e.target.value})}
+                     type="text"
+                     placeholder="post description"/>
+            <MyButton onClick={addNewPost}>Create post</MyButton>
         </form>
         <PostList posts = {posts} title ="Post list"/>
       </div>
