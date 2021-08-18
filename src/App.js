@@ -55,7 +55,6 @@ function App() {
                       setFilter={setFilter}
           />
           <hr className="hr"/>
-
           <PostList remove ={removePost} posts = {sortedAndSearchedPosts} title ="Post list"/>
 
       </div>

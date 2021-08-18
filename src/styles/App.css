@@ -52,3 +52,24 @@
 .hr {
     margin:15px auto;
 }
+
+
+
+.post-enter {
+    opacity:0;
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    opacity:1;
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity:1;
+    transform: translateX(0px) translateY(0px);
+}
+.post-exit-active {
+    opacity:0;
+    transform: translateX(-350px) translateY(1000px);
+    transition: all 500ms ease-in;
+}
