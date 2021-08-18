@@ -1,0 +1,13 @@
+.myselect {
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #444;
+    background-color: #dfdfdf;
+    padding:10px 15px 9px 10px;
+    border:1px solid #d5ecff;
+    border-radius: 5px;
+    box-shadow: 8px 12px 15px #727d80;
+}

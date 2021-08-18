@@ -13,8 +13,7 @@ const PostForm = ({createPost}) => {
             id: Date.now(), ...post
         };
         createPost(newPost)
-        setPost({title:'', body:''})
-
+        setPost({title:'', body:''});
     };
 
     return(
@@ -27,7 +26,8 @@ const PostForm = ({createPost}) => {
                      onChange = {e => setPost({...post, body:e.target.value})}
                      type="text"
                      placeholder="post description"/>
-            <MyButton onClick={addNewPost}>Create post</MyButton>
+            <MyButton onClick={addNewPost}
+                      >Create post</MyButton>
         </form>
     )
 };

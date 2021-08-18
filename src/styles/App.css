@@ -5,11 +5,13 @@
 }
 
 #root {
+    padding:20px;
     height: 100vh;
     display: flex;
     justify-content: center;
-
     background-color: #c2d6d9;
+    overflow: scroll;
+
 }
 
 .App {
