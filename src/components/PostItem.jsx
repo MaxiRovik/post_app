@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
-
+import React from 'react';
+import MyButton from "./UI/button/MyButton";
+import {useHistory} from 'react-router-dom'
 
 const PostItem = (props) => {
+    const router = useHistory();
 
     return(
 
@@ -12,10 +14,11 @@ const PostItem = (props) => {
                     {props.post.body}
                 </div>
             </div>
-            <div>
-                <button onClick={() => props.remove(props.post)}
-                        className = "post__btns"
-                >
+            <div className = "post__btns">
+                <MyButton onClick={()=>{router.push(`/posts/${props.post.id}`)}}>
+                    Open
+                </MyButton>
+                <button onClick={() => props.remove(props.post)}>
                     Delete
                 </button>
             </div>

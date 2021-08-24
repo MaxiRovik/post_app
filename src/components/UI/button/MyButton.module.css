@@ -1,14 +1,13 @@
 .myBtn {
-    padding: 5px 15px;
+    padding: 5px 10px;
     color: #d7edf0;
     font-size: 16px;
     background: #4aa84f;
     border: 1px solid #3d8d42;
-    width: 25%;
     cursor: pointer;
     margin: 5px;
     border-radius: 5px;
-    box-shadow: 8px 12px 15px #41934d;
+    box-shadow: 6px 5px 9px #41934d;
 
 }
 .myBtn:disabled {
