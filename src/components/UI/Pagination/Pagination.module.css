@@ -1,5 +1,4 @@
 .wrapperBlock {
-
     display: flex;
     width: 35%;
     margin: 15px auto 20px;
@@ -22,4 +21,18 @@
     color:black;
     background-color: rgba(106, 179, 255, 0.67);
     box-shadow: none;
+}
+.btn:hover {
+    transform:scale(1.1) translate(-1px, 1px);
+}
+
+.btn__current {
+    font-size:20px;
+    padding:10px;
+    border-radius: 7px;
+    box-shadow: #d5ecff;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    background-color: #dbe0ff;
+    font-weight: 700;
 }

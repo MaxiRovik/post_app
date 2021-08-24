@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 80vw;
+    border-radius: 10px;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #6ab3ff;
+}
+.navbar__links {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+
+}
+
+.navbar__links a {
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+    text-decoration: none;
+
+}
